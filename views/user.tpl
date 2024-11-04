@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>網站 {{.Website}}</h1>
+    {{ if .User }}
+    用戶名: {{ .User.Username }}
+    {{ else }}
+    查無此用戶
+    {{ end }}
+</body>
+</html>
