@@ -13,4 +13,7 @@ func init() {
 
 	// 使用相同的 controller, 所以產生相同的結果
 	beego.Router("/sherbet912", &controllers.MainController{})
+
+	beego.Router("/user", &controllers.UserController{})
+	beego.Router("/user/:id([0-9]+)", &controllers.UserController{})
 }

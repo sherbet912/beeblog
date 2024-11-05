@@ -7,8 +7,8 @@
 </head>
 <body>
     <h1>網站 {{.Website}}</h1>
-    {{ if .User }}
-    用戶名: {{ .User.Username }}
+    {{ if .user }}
+    用戶名: {{ .user.Username }}
     {{ else }}
     查無此用戶
     {{ end }}

@@ -19,7 +19,7 @@ func (c *MainController) Get() {
 	c.Data["Email"] = "sherbet912@gmail.com"
 
 	user := models.GetUserById(1)
-	c.Data["User"] = user
+	c.Data["user"] = user
 	c.TplName = "user.tpl"
 
 	// 選擇要渲染的模板, 框架會在 views 裡面找對應的檔案
